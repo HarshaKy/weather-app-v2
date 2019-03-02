@@ -9,6 +9,6 @@ request({ url: geocodeUrl, json: true }, (error, response) => {
 });
 
 request({ url: url, json: true  }, (error, response) => {
-  console.log(response.body.currently);
+  // console.log(response.body.currently);
   console.log(`${response.body.daily.data[0].summary} It is currently ${response.body.currently.temperature} degrees out. There is a ${response.body.currently.precipProbability}% chance of rain.` );
 });
