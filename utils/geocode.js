@@ -1,6 +1,6 @@
 const request = require('request');
 
-var {darksky, mapbox} = require('./../keys/keys.js');
+var {mapbox} = require('./../keys/keys.js');
 
 const geocode = (address, callback) => {
   var geocodeUrl = `https://api.mapbox.com/geocoding/v5/mapbox.places/${address}.json?access_token=${mapbox}&limit=1`;

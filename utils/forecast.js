@@ -1,6 +1,6 @@
 const request = require('request');
 
-var {darksky, mapbox} = require('./../keys/keys.js');
+var {darksky} = require('./../keys/keys.js');
 
 const forecast = (lat, lng, callback) => {
   var url = `https://api.darksky.net/forecast/${darksky}/${lat},${lng}?units=si`;
